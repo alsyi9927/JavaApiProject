@@ -9,6 +9,7 @@ import java.util.List;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
@@ -16,6 +17,8 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 @Service
 public class ApiService {
+	
+    org.slf4j.Logger log = LoggerFactory.getLogger(getClass());
 
     @Value("${openapi.serviceKey}")
     private String serviceKey;

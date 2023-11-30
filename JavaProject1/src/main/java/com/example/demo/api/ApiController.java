@@ -1,5 +1,6 @@
 package com.example.demo.api;
 
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -15,6 +16,8 @@ public class ApiController {
 
     @Autowired
     private ApiService apiService;
+    
+    org.slf4j.Logger log = LoggerFactory.getLogger(getClass());
 
     @GetMapping("/")
     public String index() {
