@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>우리 집 가격은?</title>
+    <link href="/css/DevExtreme/dx.common.css" rel="stylesheet" />
+    <link href="/css/DevExtreme/dx.material.blue.light.css" rel="stylesheet" />
+    <link href="/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/input.css" rel="stylesheet" />
+
+
+    <script src="/js/jquery_3.3.1/jquery.min.js" type="text/javascript"></script>
+    <script src="/js/DevExtreme/dx.all.js"></script>
+    <script src="/js/jspdf/jspdf.min.js"></script>
+    <script src="/js/html2canvas.js"></script>
+
+</head>
+<body>
+	<div class="box1">
+	<div class="box2">
+	    <h3>우리 집 가격은?</h3>
+	    
+	    <form id="searchForm" th:action="@{/api/data}" method="get">
+	        <label="dealYear">거래 연도(숫자만):</label>
+	        <div id="dealYear"></div>
+	
+	        <label="dealMonth">거래 월:</label>
+	        <div id="dealMonth"></div>
+	
+	        <label="regionSelect">지역:</label>
+	        <div id="regionSelect"></div>
+	        <div id="subRegionSelect" style="display:none;"></div>
+	        
+	        <label="dong">읍/면/동:</label>
+	        <div id="dong"></div>
+	        
+	        <label="AptName">아파트 이름(빈칸 시 동 전체 거래내역 조회):</label>
+	        <div id="AptName"></div>
+	        
+	        <button type="button" class="btn btn-primary pt-2" id="submitButton">조회</button>
+	        </form>
+	    </div>
+    
+        <div id="container">	
+		<div id="gridContainer"></div>
+		<button type="button" class="btn btn-primary" id="generatePdfButton" style="display: none; float: right;">pdf 저장</button>
+		</div>
+		</div>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:mariadb://192.168.56.101:3306/ApiProject
+    driver-class-name: org.mariadb.jdbc.Driver
+    username: root
+    password: nb123456
+    
+server:
+  port: 8081
+
+openapi:
+  serviceKey: IYtj%2Fvc7FPB0zJMMHJhVcRNmWxdAz9YPWkUAnCsGchgPHxQqPSK%2FdBfU%2BpDt7kw4QFcpWrBTc9lhyH6FGi5H3Q%3D%3D

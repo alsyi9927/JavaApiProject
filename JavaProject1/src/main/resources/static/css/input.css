@@ -1,0 +1,43 @@
+table {
+    border-collapse: collapse;
+    width: 50%;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+body{
+	background-color: rgb(255, 255, 255);
+}
+.box1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.box2{
+	position: relative;
+	top: 50px;
+	border: 3px solid black;	
+	border-radius: 20px;
+	padding: 10px 10px 10px 10px;
+	box-shadow: 5px 5px 5px 5px gray;
+	margin: 11px; 	
+	background-color: #E5E5E5;
+}
+#gridContainer{
+	border: 1px solid black;
+	margin: 2px;
+}
+#submitButton{
+	float: right;
+	margin: 2px;
+	background-color: blue;
+};
+#generatePdfButton{
+	right: 400px;
+	background-color: blue;
+};
+
